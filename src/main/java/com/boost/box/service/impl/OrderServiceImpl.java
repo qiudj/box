@@ -2,11 +2,12 @@ package com.boost.box.service.impl;
 
 import com.boost.box.common.DistributedLock;
 import com.boost.box.common.RedisClusterPool;
+import com.boost.box.service.OrderService;
 import redis.clients.jedis.JedisCluster;
 
 import java.util.Random;
 
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService {
 
     public void doOrder() {
         JedisCluster jedis = RedisClusterPool.getJedisCluster();

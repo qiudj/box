@@ -13,11 +13,11 @@ public class RedisClusterPool {
         // 节点集合
         Set<HostAndPort> nodeSet = new HashSet<>();
         nodeSet.add(new HostAndPort("192.168.40.21", 6390));
-        nodeSet.add(new HostAndPort("192.168.40.20", 6395));
-        nodeSet.add(new HostAndPort("192.168.40.21", 6392));
         nodeSet.add(new HostAndPort("192.168.40.21", 6391));
+        nodeSet.add(new HostAndPort("192.168.40.21", 6392));
         nodeSet.add(new HostAndPort("192.168.40.21", 6393));
         nodeSet.add(new HostAndPort("192.168.40.20", 6394));
+        nodeSet.add(new HostAndPort("192.168.40.20", 6395));
 
         // Jedis连接池配置
         JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
