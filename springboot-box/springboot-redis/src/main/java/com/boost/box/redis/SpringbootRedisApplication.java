@@ -1,4 +1,4 @@
-package com.boost.redis;
+package com.boost.box.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
-package com.boost.redis.service.impl;
+package com.boost.box.redis.service.impl;
 
-import com.boost.redis.common.DistributedLock;
-import com.boost.redis.common.RedisClusterPool;
-import com.boost.redis.service.OrderService;
+import com.boost.box.redis.common.DistributedLock;
+import com.boost.box.redis.common.RedisClusterPool;
+import com.boost.box.redis.service.OrderService;
 import redis.clients.jedis.JedisCluster;
 
 import java.util.Random;
@@ -73,7 +73,6 @@ public class OrderServiceImpl implements OrderService {
                         // 票资源已经抢完
                         break;
                     }
-
                 }
             }
         }

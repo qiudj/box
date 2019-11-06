@@ -1,4 +1,4 @@
-package com.boost.redis.service.impl;
+package com.boost.box.redis.service.impl;
 
 import org.junit.jupiter.api.Test;
 

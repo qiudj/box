@@ -1,4 +1,4 @@
-package com.boost.redis;
+package com.boost.box.redis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

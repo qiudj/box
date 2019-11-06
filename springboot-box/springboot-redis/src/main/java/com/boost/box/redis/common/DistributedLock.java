@@ -1,4 +1,4 @@
-package com.boost.redis.common;
+package com.boost.box.redis.common;
 
 import redis.clients.jedis.JedisCluster;
 
@@ -14,7 +14,7 @@ public class DistributedLock {
     private static final String SET_IF_NOT_EXIST = "NX";
     private static final String SET_WITH_EXPIRE_TIME = "PX";
     private static final Long UNLOCK_SUCCESS = 1L;
-    private static final JedisCluster JEDIS = com.boost.redis.common.RedisClusterPool.getJedisCluster();
+    private static final JedisCluster JEDIS = RedisClusterPool.getJedisCluster();
 
     /**
     * 分布式锁的过期时间要考虑实际的业务场景

@@ -1,4 +1,4 @@
-package com.boost.redis.common;
+package com.boost.box.redis.common;
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;

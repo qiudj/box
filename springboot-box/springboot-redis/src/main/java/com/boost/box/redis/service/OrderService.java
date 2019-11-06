@@ -1,4 +1,4 @@
-package com.boost.redis.service;
+package com.boost.box.redis.service;
 
 /**
  * 订单服务接口
