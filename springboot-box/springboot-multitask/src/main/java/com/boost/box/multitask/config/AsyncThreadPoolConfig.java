@@ -11,19 +11,19 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @description: @EnableAsync开启SpringBoot对异步任务的支持
+ * SpringBoot异步线程池，@EnableAsync注解开启SpringBoot对异步任务的支持。
  * @author: qdj
  * @date: 2019-11-01 13:57
  **/
 @Configuration
 @EnableAsync
-public class WorkThreadPoolConfig {
+public class AsyncThreadPoolConfig {
 
-    private static final Logger logger = LoggerFactory.getLogger(WorkThreadPoolConfig.class);
+    private static final Logger logger = LoggerFactory.getLogger(AsyncThreadPoolConfig.class);
 
     @Bean
     public Executor asyncWorkExecutor(){
-        logger.info("线程池配置开始...");
+        logger.info("异步线程池配置开始...");
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(2);
         executor.setMaxPoolSize(8);
@@ -31,7 +31,7 @@ public class WorkThreadPoolConfig {
         executor.setThreadNamePrefix("async-threads-group-");
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         executor.initialize();
-        logger.info("线程池初始化完成...");
+        logger.info("异步线程池初始化完成...");
         return executor;
     }
 
