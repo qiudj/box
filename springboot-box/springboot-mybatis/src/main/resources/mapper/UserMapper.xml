@@ -5,6 +5,6 @@
 
     <insert id="insertUser" parameterType="com.boost.box.mybatis.model.po.UserEntity">
         insert user(account, name, gender, birthday)
-        values (#{userEntity.account}, #{userEntity.name}, #{userEntity.gender}, str_to_date(#{userEntity},'%Y%m%d'))
+        values (#{account}, #{name}, #{gender}, str_to_date(#{birthday},'%Y%m%d'))
     </insert>
 </mapper>

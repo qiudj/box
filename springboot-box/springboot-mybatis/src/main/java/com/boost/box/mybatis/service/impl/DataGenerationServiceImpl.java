@@ -38,7 +38,7 @@ public class DataGenerationServiceImpl implements DataGenerationService {
             UserEntity user = new UserEntity();
             user.setAccount(String.valueOf(accountCnt.getAndIncrement()));
             user.setBirthday(generateBirthday());
-            user.setGender(String.valueOf(new Random().nextInt(1)));
+            user.setGender(String.valueOf(new Random().nextInt(2)));
 
             String fullName = Constant.FAMILY_NAMES[new Random().nextInt(Constant.FAMILY_NAMES.length)] +
                     (new Random().nextInt() >= 3 ? Constant.NAMES[new Random().nextInt(Constant.NAMES.length)] : "")
