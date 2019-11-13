@@ -42,5 +42,5 @@ public class PhoneNumberUtils {
             throw new IllegalArgumentException("invalid pattern!");
         }
     }
-    
+
 }
